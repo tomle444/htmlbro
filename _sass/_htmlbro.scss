@@ -1,0 +1,560 @@
+// Custom Theme Styles
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $base-header-font-family;
+  a {
+  	color: #000;
+  }
+}
+
+
+hr {
+	border-width: 3px;
+	border-color: $brand-color;
+	max-width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+h1 {font-size: 240%;}
+h2 {font-size: 200%;}
+h3 {font-size: 170%;}
+h4 {font-size: 130%;}
+h5 {font-size: 120%;}
+h6 {font-size: 120%;}
+
+main > .container {
+	> :first-child {
+		margin-top: 20px;
+	}
+	> :last-child {
+		margin-bottom: 40px;
+	}
+}
+
+blockquote {
+	font-family: $font-family-serif;
+	> :first-child {
+		margin-top: 0px;
+	}
+	> :last-child {
+		margin-bottom: 0px;
+	}
+}
+
+table {
+	font-size: 85%;
+}
+
+body {
+	min-height: 100%;
+}
+
+a {
+	transition: all 0.1s linear;
+	color: $brand-color;
+	&:hover, &:visited, &:active, &:focus {
+		text-decoration: none;	
+	}		
+	&:hover {
+		color: lighten($brand-color, 15%);  
+	}
+}
+
+/**
+ * Responsive Font Sizes
+ */
+@include min-width($bp-xsmall){
+	body {
+		font-size: 3vw;
+	}
+}
+@include min-width($bp-small){
+	body {
+		font-size: 2.5vw;
+	}
+}
+@include min-width($bp-medium){
+	body {
+		font-size: 2vw;
+	}
+}
+@include min-width($bp-large){
+	body {
+		font-size: 1.5vw;
+	}
+}
+@include min-width($bp-xlarge){
+	body {
+		font-size: 120%;
+	}
+}
+
+
+/**
+ * Container
+ */
+ .container-fluid {
+	min-height: 100%;
+	min-width: 100%;
+	top: 0;
+	bottom: 100%;
+	right: 0;
+	position: relative;
+	@include transition(all ease-in 0.25s);
+	&.active {
+		right: 400px;
+	}
+ }
+.overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 98;
+}
+
+/**
+ * Header
+ */
+ body {
+	&:not(.index){
+		header {
+			
+			border-bottom: 1px solid lighten($brand-color, 50%);
+			//background-color: lighten($brand-color, 55%);;
+		}
+	}
+ }
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	.wrapper {
+		//padding: ($spacing-unit/2) 0;
+	}
+
+}
+
+.logo {
+	float: left;
+	line-height: 1;
+	.site-title {
+		font-family: $base-logo-font-family;
+		font-size: $base-logo-font-size;
+		a {
+
+		}
+	}
+	span {
+		display: block;		
+	}
+}
+.menu-icon {
+	display: block;
+	float: right;
+	cursor: pointer;
+	color: $brand-color;
+	padding: 10px 16px;
+	&:hover {
+		color: #fff;
+		background-color: $brand-color;
+	}
+}
+nav {
+	position: fixed;
+	width: 400px;
+	height: 100%;
+	right: -400px;
+	max-width: 400px; 
+	top: 0;
+	background-color: rgba(0,0,0,0.9);
+	padding: 0px;	
+	z-index: 99;
+	color: #fff;
+	overflow-y:scroll;
+    overflow-x:hidden;
+	@include transition(all ease-in 0.25s);
+	.trigger {
+		padding-top: $spacing-unit;
+		padding-bottom: $spacing-unit;
+		padding-left: $spacing-unit/2;
+		padding-right: $spacing-unit/2;
+		
+		.site-nav-links {
+			margin: 5% auto;
+			width: 90%;
+
+		}
+		a {
+			padding: 10px;
+			display: block;
+			color: #fff;
+			clear: both;
+			position: relative;
+			&:hover {
+				color: #000;
+				background-color: #fff;
+			}
+		}
+		.nav-close {
+			float: right;
+			font-size: 16px;
+			text-align: center;
+			padding: 8px 12px;		
+			background-color:#222;
+			opacity: 1;
+			@include rounded(100px);
+			&:hover {
+				background-color: #fff;
+				color: #000;
+			}
+		}
+		.panel-group {
+			margin: 20px 0;
+			font-size: 90%;
+		}
+		.panel {
+			.panel-heading {
+				h6 {
+					font-size: 100%;
+					color: #fff;
+					font-family: $base-font-family;
+					padding: 10px;
+					margin: 0;
+					border-bottom: 1px solid #333;
+				}
+			}			
+			.panel-title {
+				font-size: inherit;
+				&:after {
+					content: "\f056"; 
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					text-decoration: inherit;
+					position: absolute;					
+					top: 50%;
+					right: 5%;	
+					transform: translateY(-50%);				
+					z-index: 1;
+				}
+			}
+			.panel-title.collapsed {
+				&:after {
+					content: "\f055";
+				}
+			}
+			.panel-collapse {
+				a {
+					font-size: 80%;
+					padding: 8px 12px;
+				}
+			}
+		}
+	}
+	
+	&.active {
+		right: 0px;
+	}
+}
+
+/**
+ * Main
+ */
+main {
+	padding-top: 109px;
+	> h1 {
+		text-align: center;
+		color: #fff;
+		background-color: $brand-color;
+		margin: 0;
+	}
+}
+
+/**
+ * Hero
+ */
+.hero {
+	text-align: center;
+	height: 400px;
+	background-image: url('/images/bg-hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	position: relative;
+	&:before {
+		background-image: url('/images/bg-hero.jpg');
+	}
+
+	
+	.overlay-color {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $brand-color;
+		opacity: 0.8;
+	}
+	.overlay-text {
+		position: relative;
+		//display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		z-index: 5;
+		top: 50%;
+		transform:translateY(-50%);
+		margin: auto;
+		width: 75%;
+		> span.clr {
+			display: block;
+			width: 100%;
+			.btn {
+				border: 1px solid #fff;
+				color: #fff;
+				
+				&:hover {
+					color: $brand-color;
+					background-color:#fff;
+				}
+			}
+		}
+		h1 {
+			position: relative;
+			display: inline-block;
+			font-size: 5vw;	
+			color: #fff;
+			font-family: $base-font-family;	
+		}
+		.double {
+			font-size: 3vw;
+		}
+		.triple {
+			font-size: 5vw;
+		}
+		.boom {
+			font-size: 8vw;
+		}
+		
+		@include min-width($bp-xsmall){
+			h1 {
+				font-size: 3.75vw;
+			}
+			.double {
+				font-size: 8vw;
+			}
+		}
+		@include min-width($bp-small){
+			h1 {
+				font-size: 2.75vw; 
+			}
+			.double {
+				font-size: 7vw;
+			}
+		}
+		@include min-width($bp-medium){
+			h1 {
+				font-size: 2vw; 
+			}
+			.double {
+				font-size: 5vw;
+			}
+			.triple {
+				font-size: 5vw;
+			}
+			.boom {
+				font-size: 8vw;
+			}
+		}	
+		@include min-width($bp-xlarge){
+			max-width: 50%;
+			h1 {
+				font-size: 125%; 
+			}
+			.double {
+				font-size: 60px;
+			}
+		}
+	}
+}
+
+/***
+**	Header
+***/
+
+.container {
+	padding: $spacing-unit;
+}
+
+header {
+
+}
+
+/**
+ * Homepage
+ */
+.index {
+	.logo {
+		color: #fff;
+		a {
+			color: #fff;
+			&:hover {
+				color: $brand-color;
+			}
+		}
+	}
+	.menu-icon {
+		color: #fff;
+
+		&:hover {
+			color: $brand-color;
+			background-color: #fff;
+		}
+	}
+
+	main {
+		padding-top: 0;
+	}
+}
+
+/**
+ * Footer
+ */
+ footer {
+ 	padding-bottom: 66px;
+ 	background-color: lighten($brand-color, 50%);
+ 	font-size: 90%;
+ 	
+ }
+ .bottom {
+	background-color: #000;
+	color: #fff;
+	font-size: 90%;
+	position: absolute;
+	width: 100%;
+	.site-links {
+		margin-bottom: 20px;
+		a {
+			&.page-link {
+				margin: 0 5px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+	 	}
+	}
+
+	
+	copyright {
+		font-size: 75%;
+	}
+	.container {
+		padding: ($spacing-unit - 10);
+	}
+}
+
+.social-media-list {
+	list-style-type: none;
+	margin-bottom: 0;
+	li {
+		display: inline-block;
+		margin: auto 2px;
+		font-size: $base-font-size + 50;
+		span {
+			//font-size: $base-font-size;
+			&.username {
+				display: none;
+			}
+		}
+	}
+	@include min-width($bp-medium){
+		text-align: right;
+	}
+}
+
+/**
+ * Layout
+ */
+@include min-width($bp-medium) {
+	nav {		
+		.trigger {
+			//display: none;
+		}
+	}
+}
+
+/***
+**	Pagination
+***/
+
+.pager {
+	
+	.pagination-prev,.pagination-next {
+		
+	}
+
+	.pagination-next {
+		float: right;
+	}
+	.pagination-prev {
+		float: left;
+	}
+	
+	.pages {
+		display: inline-block;
+		a, span {
+			display: inline-block;
+			padding: 2px 10px;
+		    background-color: $brand-color;
+    		border-radius: 40px;
+    		width: 30px;
+    		height: 30px;
+    		color: #fff;
+    		line-height:24px;
+    		font-size: 90%;
+		}
+		span {
+			background-color: lighten($brand-color, 100%);
+			color: $brand-color;
+			border: 1px solid $brand-color;
+		}
+	}
+		
+	a, span{
+		
+		
+	}
+	&:first-child, &:last-child {
+		&.pagination-prev, &.pagination-next {
+			
+		}
+		a, span {
+
+		}
+		
+	}
+
+	/* border: 1px solid lighten($brand-color-secondary, 25%);
+		-webkit-border-radius: 40px;
+		-moz-border-radius: 40px;
+		border-radius: 40px;
+		text-transform: uppercase;
+		font-size: 50%;
+		text-align: center;
+		line-height: 1;
+		padding: 14px 40px; */
+
+}

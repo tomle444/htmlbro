@@ -1,0 +1,79 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# !important note: enable/disable values are identified by 'yes' or 'no' values
+
+# Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: http://htmlbro.com # the base hostname & protocol for your site, e.g. http://example.com
+copyright: All Rights Reserved
+owner: HTML Bro 
+home_link_enabled: yes #yes/no
+
+
+# Meta settings
+title: HTMLBro
+tagline: Here is your tagline
+description: |  
+  Write an awesome description for your new site here. <br />You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml <em>site description</em>
+
+# Contact settings
+email: hello@htmlbro.com
+phone: 123-123-1234
+address: 123 Street Dr. Brociety CA 90211
+
+# Social settings
+facebook_username: htmlbro
+twitter_username: htmlbro
+github_username:  htmlbro
+instagram_username:  htmlbro
+pinterest_username:  htmlbro
+googelplus_username:  htmlbro
+linkedin_username:  htmlbro
+
+# Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# SASS settings
+sass:
+  style: compact
+  line_comments: true
+
+# Blog settings
+blog_enabled: yes #yes/no
+blog_title: Blog
+blog_slug: blog
+paginate: 3
+paginate_path: '/blog/page:num/'
+
+excerpt_separator: <!--more-->
+
+# Navigation settings
+show_categories: no #yes/no
+#show_archive: no #yes/no
+
+# Hero text
+hero_text: |
+ <span class="double center-block"><strong>HTMLBro</strong></span> is a customizable Jekyll theme that is available for download.
