@@ -35,7 +35,7 @@ description: |
 # Contact settings
 email: hello@htmlbro.com
 phone: 123-123-1234
-address: 123 Street Dr. Brociety CA 90211
+address: 123 Street Dr. Brociety CA 92010
 
 # Social settings
 facebook_username: htmlbro
@@ -45,6 +45,7 @@ instagram_username:  htmlbro
 pinterest_username:  htmlbro
 googelplus_username:  htmlbro
 linkedin_username:  htmlbro
+behance_username:  htmlbro
 
 # Build settings
 markdown: kramdown

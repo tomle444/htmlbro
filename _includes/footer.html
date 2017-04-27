@@ -1,13 +1,15 @@
 <footer class="site-footer">
-
+  <div class="footer-overlay"></div>
   <div class="container">
     <div class="row">
+      <h1>More About Jekyll...</h1>
+      <hr />
       {% for post in site.posts limit:3 %}
         {% if post.featured %}
         <div class="footer-col col-sm-12 col-md-6 col-lg-6">
           <img src="{{ post.image }}" alt="" />
           <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title  }}</a></h3>
-          {% if post.date %}<p>{{ post.date | date: "%b %-d, %Y" }}</p>{% endif %}
+          {% if post.date %}<span class="post-meta post-date"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{ post.date | date: "%b %-d, %Y" }}</span>{% endif %}
           <p>{{ post.excerpt }}</p>
           <a class="post-link button btn btn-default" href="{{ post.url | relative_url }}">View</a>
         </div>
@@ -36,7 +38,7 @@
 <div class="bottom">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
         
         <div class="site-links">
           {% if site.home_link_enabled == true  %}<a class="page-link first" href="/">Home</a>{% endif %}
@@ -50,14 +52,8 @@
             {% endif %}
           {% endfor %}
         </div>
-        <p>{{ site.title }}<br />          
-          <a href="#">{{ site.email }}</a><br />
-          {{ site.phone }}<br />
-        </p>
-        <address>{{ site.address }}</address>
-        <copyright>{{ site.copyright }} &copy; {{ site.time | date: '%Y' }} {{ site.title }}</copyright>
-      </div> 
-      <div class="col-sm-12 col-md-6 col-lg-6">
+        
+  
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -100,8 +96,20 @@
             {% include icon-linkedin.html username=site.linkedin_username %}
           </li>
           {% endif %}
+          {% if site.behance_username %}
+          <li>
+            {% include icon-behance.html username=site.behance_username %}
+          </li>
+          {% endif %}
         </ul>  
-      </div>
+        <div class="site-info">
+          <p class="lead">{{ site.title }}</p> <hr /> 
+          <a href="#">{{ site.email }}</a> <a href="tel: {{ site.phone }}">{{ site.phone }}</a>
+        </div>
+        <address>{{ site.address }}</address>
+        <copyright>{{ site.copyright }} &copy; {{ site.time | date: '%Y' }} {{ site.title }}</copyright>
+      </div> 
+
       
     </div>
   </div>

@@ -6,9 +6,8 @@ categories: configuration
 comments: true
 featured: true
 image: http://placehold.it/350x150
-
+excerpt: Jekyll allows you to connect your sites in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that this is possible. 
 ---
-
 Jekyll allows you to connect your sites in any way you can dream up, and it’s thanks to the powerful and flexible configuration options that this is possible. <!--more--> These options can either be specified in a _config.yml file placed in your site’s root directory, or can be specified as flags for the jekyll executable in the terminal.
 
 <h2>Configuration Settings</h2>

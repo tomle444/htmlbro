@@ -1,7 +1,9 @@
 $(function(){
 	//alert("!");
+	windowWidth = $(window).innerWidth;
 	var navigationWidth = 400;
-	
+
+
 	$('.overlay').css('display', 'none' );
 	//$('nav').css('right', -navigationWidth );
 	//$('nav').css('width', navigationWidth );
@@ -31,6 +33,12 @@ $(function(){
 		}
 	});
 
+	if (windowWidth < 768){
+		$(window).on('resize', function(){
+			windowWidth = $(window).innerWidth;
+		});
+	
+	}
 
 	/**
 	** Mobile Testing

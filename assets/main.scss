@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Changa+One|Catamaran|Passion+One');
+@import url('https://fonts.googleapis.com/css?family=Changa+One|Catamaran|Cabin');
 
 
 // Spacing
@@ -18,7 +18,7 @@ $base-font-weight: 400;
 $base-line-height: 1.4;
 $small-font-size:  $base-font-size * 0.875;
 // -Header Fonts
-$base-header-font-family: "Passion One", Helvetica, Arial, sans-serif;
+$base-header-font-family: "Cabin", Helvetica, Arial, sans-serif;
 // -Logo Fonts
 $base-logo-font-family: "Changa One", Helvetica, Arial, sans-serif;
 $base-logo-font-size: 30px;
