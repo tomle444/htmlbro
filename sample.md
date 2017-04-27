@@ -114,183 +114,188 @@ priority: 30
 
 <ul class="task-list">
       <li class="task-list-item">
-            <input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Create a sample markdown document</li>
-            <li class="task-list-item">
-                  <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">Partially, but it also obeys your commands.</li>
-                  <li class="task-list-item">
-                        <input type="checkbox" class="task-list-item-checkbox" disabled=""> Hokey religions and ancient weapons are no match for a good blaster at your side, kid.</li>
-                  </ul>
+            <input type="checkbox" class="task-list-item-checkbox" checked="" disabled=""> Create a sample markdown document
+      </li>
+      <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" checked="" disabled="">Partially, but it also obeys your commands.
+      </li>
+      <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" disabled=""> Hokey religions and ancient weapons are no match for a good blaster at your side, kid.
+      </li>
+</ul>
 
-                  <p>And a "mixed" task list:</p>
+<p>And a "mixed" task list:</p>
 
-                  <ul class="task-list">
-                        <li class="task-list-item">
-                              <input type="checkbox" class="task-list-item-checkbox" disabled=""> Don't underestimate the Force.</li>
-                              <li>?</li>
-                              <li class="task-list-item">
-                                    <input type="checkbox" class="task-list-item-checkbox" disabled=""> I'm trying not to, kid.</li>
-                              </ul>
+<ul class="task-list">
+      <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" disabled=""> Don't underestimate the Force.
+      </li>
+      <li>?</li>
+      <li class="task-list-item">
+            <input type="checkbox" class="task-list-item-checkbox" disabled=""> I'm trying not to, kid.
+      </li>
+</ul>
 
-                              <p>And a nested list:</p>
+<p>And a nested list:</p>
 
-                              <ul class="task-list">
-                                    <li>Jackson 5
+<ul class="task-list">
+      <li>Jackson 5
 
-                                          <ul class="task-list">
-                                                <li>Michael</li>
-                                                <li>Tito</li>
-                                                <li>Jackie</li>
-                                                <li>Marlon</li>
-                                                <li>Jermaine</li>
-                                          </ul>
-                                    </li>
-                                    <li>TMNT
+            <ul class="task-list">
+                  <li>Michael</li>
+                  <li>Tito</li>
+                  <li>Jackie</li>
+                  <li>Marlon</li>
+                  <li>Jermaine</li>
+            </ul>
+      </li>
+      <li>TMNT
 
-                                          <ul class="task-list">
-                                                <li>Leonardo</li>
-                                                <li>Michelangelo</li>
-                                                <li>Donatello</li>
-                                                <li>Raphael</li>
-                                          </ul>
-                                    </li>
-                              </ul>
+            <ul class="task-list">
+                  <li>Leonardo</li>
+                  <li>Michelangelo</li>
+                  <li>Donatello</li>
+                  <li>Raphael</li>
+            </ul>
+      </li>
+</ul>
 
-                              <p>Definition lists <code>dl</code> can be used with HTML syntax. Definition terms <code>dt</code> are bold.</p>
+<p>Definition lists <code>dl</code> can be used with HTML syntax. Definition terms <code>dt</code> are bold.</p>
 
-                              <dl>
-                                <dt>Name</dt>
-                                <dd>Ezra Bridger</dd>
-                                <dt>Born</dt>
-                                <dd>19BBY</dd>
-                                <dt>Birthplace</dt>
-                                <dd>Lothal</dd>
-                                <dt>Race</dt>
-                                <dd>Human</dd>
-                          </dl>
+<dl>
+  <dt>Name</dt>
+  <dd>Ezra Bridger</dd>
+  <dt>Born</dt>
+  <dd>19BBY</dd>
+  <dt>Birthplace</dt>
+  <dd>Lothal</dd>
+  <dt>Race</dt>
+  <dd>Human</dd>
+</dl>
 
-                          <hr>
+<hr>
 
-                          <p>Tables should have bold headings and alternating shaded rows.</p>
-                          <div class="table-responsive">
-                              <table class="table table-striped">
-                                    <thead>
-                                          <tr>
-                                                <th>Artist</th>
-                                                <th>Album</th>
-                                                <th>Year</th>
-                                          </tr>
-                                    </thead>
-                                    <tbody>
-                                          <tr>
-                                                <td>Michael Jackson</td>
-                                                <td>Thriller</td>
-                                                <td>1982</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Prince</td>
-                                                <td>Purple Rain</td>
-                                                <td>1984</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Beastie Boys</td>
-                                                <td>License to Ill</td>
-                                                <td>1986</td>
-                                          </tr>
-                                    </tbody>
-                              </table>
-                        </div>
+<p>Tables should have bold headings and alternating shaded rows.</p>
+<div class="table-responsive">
+<table class="table table-striped">
+      <thead>
+            <tr>
+                  <th>Artist</th>
+                  <th>Album</th>
+                  <th>Year</th>
+            </tr>
+      </thead>
+      <tbody>
+            <tr>
+                  <td>Michael Jackson</td>
+                  <td>Thriller</td>
+                  <td>1982</td>
+            </tr>
+            <tr>
+                  <td>Prince</td>
+                  <td>Purple Rain</td>
+                  <td>1984</td>
+            </tr>
+            <tr>
+                  <td>Beastie Boys</td>
+                  <td>License to Ill</td>
+                  <td>1986</td>
+            </tr>
+      </tbody>
+</table>
+</div>
 
-                        <p>If a table is too wide, it should condense down and/or scroll horizontally.</p>
-                        <div class="table-responsive">
-                              <table class="table">
-                                    <thead>
-                                          <tr>
-                                                <th>Artist</th>
-                                                <th>Album</th>
-                                                <th>Year</th>
-                                                <th>Label</th>
-                                                <th>Awards</th>
-                                                <th>Songs</th>
-                                          </tr>
-                                    </thead>
-                                    <tbody>
-                                          <tr>
-                                                <td>Michael Jackson</td>
-                                                <td>Thriller</td>
-                                                <td>1982</td>
-                                                <td>Epic Records</td>
-                                                <td>Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical</td>
-                                                <td>Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Prince</td>
-                                                <td>Purple Rain</td>
-                                                <td>1984</td>
-                                                <td>Warner Brothers Records</td>
-                                                <td>Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal</td>
-                                                <td>Let's Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I'm a Star, Purple Rain</td>
-                                          </tr>
-                                          <tr>
-                                                <td>Beastie Boys</td>
-                                                <td>License to Ill</td>
-                                                <td>1986</td>
-                                                <td>Mercury Records</td>
-                                                <td>noawardsbutthistablecelliswide</td>
-                                                <td>Rhymin &amp; Stealin, The New Style, She's Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill</td>
-                                          </tr>
-                                    </tbody>
-                              </table>
-                        </div>
+<p>If a table is too wide, it should condense down and/or scroll horizontally.</p>
+<div class="table-responsive">
+      <table class="table">
+            <thead>
+                  <tr>
+                        <th>Artist</th>
+                        <th>Album</th>
+                        <th>Year</th>
+                        <th>Label</th>
+                        <th>Awards</th>
+                        <th>Songs</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Michael Jackson</td>
+                        <td>Thriller</td>
+                        <td>1982</td>
+                        <td>Epic Records</td>
+                        <td>Grammy Award for Album of the Year, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Selling Album, Grammy Award for Best Engineered Album, Non-Classical</td>
+                        <td>Wanna Be Startin' Somethin', Baby Be Mine, The Girl Is Mine, Thriller, Beat It, Billie Jean, Human Nature, P.Y.T. (Pretty Young Thing), The Lady in My Life</td>
+                  </tr>
+                  <tr>
+                        <td>Prince</td>
+                        <td>Purple Rain</td>
+                        <td>1984</td>
+                        <td>Warner Brothers Records</td>
+                        <td>Grammy Award for Best Score Soundtrack for Visual Media, American Music Award for Favorite Pop/Rock Album, American Music Award for Favorite Soul/R&amp;B Album, Brit Award for Best Soundtrack/Cast Recording, Grammy Award for Best Rock Performance by a Duo or Group with Vocal</td>
+                        <td>Let's Go Crazy, Take Me With U, The Beautiful Ones, Computer Blue, Darling Nikki, When Doves Cry, I Would Die 4 U, Baby I'm a Star, Purple Rain</td>
+                  </tr>
+                  <tr>
+                        <td>Beastie Boys</td>
+                        <td>License to Ill</td>
+                        <td>1986</td>
+                        <td>Mercury Records</td>
+                        <td>noawardsbutthistablecelliswide</td>
+                        <td>Rhymin &amp; Stealin, The New Style, She's Crafty, Posse in Effect, Slow Ride, Girls, (You Gotta) Fight for Your Right, No Sleep Till Brooklyn, Paul Revere, Hold It Now, Hit It, Brass Monkey, Slow and Low, Time to Get Ill</td>
+                  </tr>
+            </tbody>
+      </table>
+</div>
 
-                        <hr>
+<hr>
 
-                        <p>Code snippets like <code>var foo = "bar";</code> can be shown inline.</p>
+<p>Code snippets like <code>var foo = "bar";</code> can be shown inline.</p>
 
-                        <p>Also, <code>this should vertically align</code> <del><code>with this</code></del> <del>and this</del>.</p>
+<p>Also, <code>this should vertically align</code> <del><code>with this</code></del> <del>and this</del>.</p>
 
-                        <p>Code can also be shown in a block element.</p>
+<p>Code can also be shown in a block element.</p>
 
-                        <pre><code>var foo = "bar";
-                        </code></pre>
+<pre><code>var foo = "bar";
+</code></pre>
 
-                        <p>Code can also use syntax highlighting.</p>
+<p>Code can also use syntax highlighting.</p>
 
-                        <div class="highlight highlight-Javascript"><pre><span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>;</pre></div>
+<div class="highlight highlight-Javascript"><pre><span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>;</pre></div>
 
-                        <pre><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.</code></pre>
+<pre><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.</code></pre>
 
-                        <div class="highlight highlight-Javascript"><pre><span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>The same thing is true for code with syntax highlighting. A single line of code should horizontally scroll if it is really long.<span class="pl-pds">"</span></span>;</pre></div>
+<div class="highlight highlight-Javascript"><pre><span class="pl-k">var</span> foo <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>The same thing is true for code with syntax highlighting. A single line of code should horizontally scroll if it is really long.<span class="pl-pds">"</span></span>;</pre></div>
 
-                        <p>Inline code inside table cells should still be distinguishable.</p>
-                        <div class="table-responsive">
-                              <table class="table">
-                                    <thead>
-                                          <tr>
-                                                <th>Language</th>
-                                                <th>Code</th>
-                                          </tr>
-                                    </thead>
-                                    <tbody>
-                                          <tr>
-                                                <td>Javascript</td>
-                                                <td><code>var foo = "bar";</code></td>
-                                          </tr>
-                                          <tr>
-                                                <td>Ruby</td>
-                                                <td><code>foo = "bar"</code></td>
-                                          </tr>
-                                    </tbody>
-                              </table>
-                        </div>
+<p>Inline code inside table cells should still be distinguishable.</p>
+<div class="table-responsive">
+      <table class="table">
+            <thead>
+                  <tr>
+                        <th>Language</th>
+                        <th>Code</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Javascript</td>
+                        <td><code>var foo = "bar";</code></td>
+                  </tr>
+                  <tr>
+                        <td>Ruby</td>
+                        <td><code>foo = "bar"</code></td>
+                  </tr>
+            </tbody>
+      </table>
+</div>
 
-                        <hr>
+<hr>
 
-                        <p>Small images should be shown at their actual size.</p>
+<p>Small images should be shown at their actual size.</p>
 
-                        <p><a href="https://camo.githubusercontent.com/16a9d5241f679b6429fc0597f10816dd2665bbb2/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3330302f3230302f" target="_blank"><img src="https://camo.githubusercontent.com/16a9d5241f679b6429fc0597f10816dd2665bbb2/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3330302f3230302f" alt="" data-canonical-src="https://placekitten.com/g/300/200/" style="max-width:100%;"></a></p>
+<p><a href="https://camo.githubusercontent.com/16a9d5241f679b6429fc0597f10816dd2665bbb2/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3330302f3230302f" target="_blank"><img src="https://camo.githubusercontent.com/16a9d5241f679b6429fc0597f10816dd2665bbb2/687474703a2f2f706c6163656b697474656e2e636f6d2f672f3330302f3230302f" alt="" data-canonical-src="https://placekitten.com/g/300/200/" style="max-width:100%;"></a></p>
 
-                        <p>Large images should always scale down and fit in the content container.</p>
+<p>Large images should always scale down and fit in the content container.</p>
 
-                        <p><a href="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" target="_blank"><img src="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" alt="" data-canonical-src="https://placekitten.com/g/1200/800/" style="max-width:100%;"></a></p>
+<p><a href="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" target="_blank"><img src="https://camo.githubusercontent.com/afe46418285497605cf4f6376b75f8c818658fb1/687474703a2f2f706c6163656b697474656e2e636f6d2f672f313230302f3830302f" alt="" data-canonical-src="https://placekitten.com/g/1200/800/" style="max-width:100%;"></a></p>
 
-                        <pre><code>This is the final element on the page and there should be no margin below this.</code></pre>
+<pre><code>This is the final element on the page and there should be no margin below this.</code></pre>
