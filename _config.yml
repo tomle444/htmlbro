@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: http://htmlbro.com # the base hostname & protocol for your site, e.g. http://example.com
 copyright: All Rights Reserved
 owner: HTML Bro 
-home_link_enabled: yes #yes/no
+home_link_enabled: no #yes/no
 
 
 # Meta settings

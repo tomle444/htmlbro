@@ -1,0 +1,148 @@
+/**
+ * Homepage
+ */
+.index {
+	.logo {
+		color: #fff;
+		a {
+			color: #fff;
+			&:hover {
+				color: $brand-color;
+			}
+		}
+	}
+	.menu-icon {
+		color: #fff;
+
+		&:hover {
+			color: $brand-color;
+			background-color: #fff;
+		}
+	}
+
+	main {
+		padding-top: 0;
+		section.container {
+			.row {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.col {
+
+				}
+			}
+		}
+	}
+}
+
+
+/**
+ * Hero
+ */
+.hero {
+	text-align: center;
+	height: 400px;
+	background-image: url('/images/bg-hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+	position: relative;
+	&:before {
+		background-image: url('/images/bg-hero.jpg');
+	}
+
+	
+	.overlay-color {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $brand-color;
+		opacity: 0.8;
+	}
+	.overlay-text {
+		position: relative;
+		//display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		z-index: 5;
+		top: 50%;
+		transform:translateY(-50%);
+		margin: auto;
+		width: 75%;
+		> span.clr {
+			display: block;
+			width: 100%;
+			.btn {
+				border: 1px solid #fff;
+				color: #fff;
+				
+				&:hover {
+					color: $brand-color;
+					background-color:#fff;
+				}
+			}
+		}
+		h1 {
+			position: relative;
+			display: inline-block;
+			font-size: 5vw;	
+			color: #fff;
+			font-family: $base-font-family;	
+		}
+		.double {
+			font-size: 6vw;
+		}
+		.triple {
+			font-size: 7vw;
+		}
+		.boom {
+			font-size: 8vw;
+		}
+		
+		@include min-width($bp-xsmall){
+			h1 {
+				font-size: 3.75vw;
+			}
+			.double {
+				font-size: 8vw;
+			}
+		}
+		@include min-width($bp-small){
+			h1 {
+				font-size: 2.75vw; 
+			}
+			.double {
+				font-size: 7vw;
+			}
+			.triple {
+				font-size: 5vw;
+			}
+		}
+		@include min-width($bp-medium){
+			h1 {
+				font-size: 2vw; 
+			}
+			.double {
+				font-size: 5vw;
+			}
+			.triple {
+				font-size: 5vw;
+			}
+			.boom {
+				font-size: 8vw;
+			}
+		}	
+		@include min-width($bp-xlarge){
+			max-width: 50%;
+			h1 {
+				font-size: 125%; 
+			}
+			.double {
+				font-size: 60px;
+			}
+		}
+	}
+}

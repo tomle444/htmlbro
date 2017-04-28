@@ -1,0 +1,124 @@
+
+ footer {
+ 	padding-bottom: 66px;
+ 	color: #fff;
+ 	font-size: 90%;
+ 	background-image: url('/images/bg-featured.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+ 	.footer-overlay {
+ 		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $brand-color;
+		opacity: 0.8;
+ 	}
+ 	.container {
+ 		padding: ($spacing-unit + 40);
+ 		z-index: 3;
+ 		position: relative;
+ 		h1 {
+ 			text-align: center;
+ 			font-size: 200%;
+ 			margin-top: 0;
+ 			margin-bottom: 40px;
+ 		}
+ 		hr {
+ 			margin-bottom: 60px;
+ 			border-color: lighten($brand-color, 25%);;
+ 		}
+ 		.footer-col {
+ 			padding-left: $spacing-unit + 14;
+ 			padding-right: $spacing-unit + 14;
+ 			h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #fff; }
+ 			.post-meta {
+ 				color: lighten($brand-color, 25%);
+ 			}
+ 		}
+ 		@include max-width($bp-large){
+			.footer-col {
+				padding-top: $spacing-unit + 14;
+ 				padding-bottom: $spacing-unit + 14;
+			}
+ 		}
+ 		@include max-width($bp-small){
+ 			padding: ($spacing-unit + 40) $spacing-unit;
+ 			.footer-col {
+ 				padding-left: 10px;
+ 				padding-right: 10px;
+ 			}
+ 		}
+ 	}
+ }
+ .bottom {
+	background-color: #000;
+	color: #fff;
+	font-size: 90%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	.site-links {
+		margin-bottom: 20px;
+		text-align: center;
+		a {
+			&.page-link {
+				margin: 0 15px;
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+	 	}
+	}
+	
+	.site-info {
+		margin-top: 50px;
+		font-size: 75%;
+		p.lead {
+			font-size: 140%;
+			margin-bottom: 16px;
+		}
+		hr {
+			margin: 30px auto;
+		}
+		a {
+			margin: auto 10px;
+		}
+	}
+	address {
+		font-size: 75%;
+		margin-top: 10px;
+	}
+	copyright {
+		font-size: 65%;
+	}
+	.container {
+		padding: ($spacing-unit + 40);
+	}
+}
+
+.social-media-list {
+	list-style-type: none;
+	margin: 40px auto;
+	margin-left: 0;
+	li {
+		display: inline-block;
+		margin: auto 6px;
+		font-size: $base-font-size + 50;
+		span {
+			//font-size: $base-font-size;
+			&.username {
+				display: none;
+			}
+		}
+	}
+	@include min-width($bp-medium){
+		text-align: center;
+	}
+}
